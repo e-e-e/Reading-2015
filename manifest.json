@@ -1,0 +1,13 @@
+{
+  "name": "Test Dev Panel",
+  "version": "0.1",
+  "description": "artwork for deapple",
+  "devtools_page": "devtools.html",
+  "manifest_version": 2,
+  "permissions": ["<all_urls>"],
+  "content_scripts": [{
+    "matches": ["http://*.deappel.nl/*", "https://*.deappel.nl/*", "http://*.stedelijk.nl/*", "https://*.stedelijk.nl/*"],
+    "js": ["jquery-1.11.2.min.js", "reading_deappel.js"],
+    "run_at": "document_start"
+  }]
+}
